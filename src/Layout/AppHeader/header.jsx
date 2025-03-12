@@ -1,16 +1,20 @@
-// src/Header.jsx
-import React from 'react';
+// Header.jsx
+// Header.jsx
+import React, { useState } from 'react';
+import HorizontalLinearStepper from '../../components/HorizontalLinearStepper/index'; // Vérifie le chemin
+import Orange from '../../assets/orange.png'; // Vérifie que l'image existe et a la bonne extension
+import { Box } from '@mui/material';
+import './Header.css'; // Import du fichier CSS
 
 const Header = () => {
+  const [activeStep, setActiveStep] = useState(0);
+
   return (
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/about">À propos</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header className="header">
+      <HorizontalLinearStepper activeStep={activeStep} setActiveStep={setActiveStep} />
+      <Box className="logo-container">
+        <img src={Orange} alt="Orange" className="logo" />
+      </Box>
     </header>
   );
 };

@@ -1,14 +1,17 @@
-
 import React from 'react';
-import Footer from '../Layout/AppFooter/footer'; 
-import Header from '../Layout/AppHeader/header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from '../Layout/index'; // Assure-toi que le chemin est correct
+
 const AppRoutes = () => {
   return (
-    <div>
-      <Footer />
-      <Header/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        
+      </Routes>
+    </Router>
   );
 };
 
 export default AppRoutes;
+
