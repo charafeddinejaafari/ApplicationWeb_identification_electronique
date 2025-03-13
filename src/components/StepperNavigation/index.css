@@ -1,0 +1,29 @@
+.custom-stepper-container {
+    max-width: 1400px; 
+    width: 90%; 
+    margin: 5px auto; 
+    padding: 6px; 
+    transform: scale(0.95); 
+}
+
+.custom-stepper {
+    margin-top: 140px;
+    margin-bottom: 12px;
+    transform: scale(0.95);
+}
+
+.step-label {
+    font-size: 12px; 
+}
+
+.step-content {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.button-next {
+    margin-right: 15px;
+    height: 34px; 
+    padding: 4px 10px;
+    font-size: 13px;
+}
