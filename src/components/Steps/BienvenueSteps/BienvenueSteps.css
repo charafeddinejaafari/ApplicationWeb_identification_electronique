@@ -1,0 +1,30 @@
+/* Centrer la page entière avec Flexbox */
+.welcome-container {
+  display: flex;
+  justify-content: center;  /* Centrage horizontal */
+  align-items: center;      /* Centrage vertical */
+  height: 100vh;            /* Prendre toute la hauteur de la fenêtre */
+  background-color:white; /* Couleur de fond pour l'exemple */
+}
+
+/* Contenu de la page */
+.welcome-content {
+  text-align: center;  /* Centrer le texte à l'intérieur */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Vous pouvez ajuster la largeur comme vous voulez */
+  max-width: 500px; /* Limite la largeur pour ne pas qu'il soit trop grand sur les écrans larges */
+}
+
+/* Style du titre */
+.welcome-title {
+  margin-bottom: 20px; /* Espace entre le titre et le bouton */
+  color: #3f51b5;  /* Couleur du titre */
+}
+
+/* Style du bouton */
+.MuiButton-root {
+  margin-top: 20px;  /* Espace au-dessus du bouton */
+}

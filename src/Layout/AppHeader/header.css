@@ -1,25 +1,36 @@
-/* Header.css */
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px; /* Réduction de l’espace intérieur */
-    position: fixed; /* Fixe le header pour éviter le scroll */
+    padding: 10px 30px; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* Ajuste selon ton design */
+    background-color: white; 
     z-index: 1000;
-    height: 100px; /* Ajuste selon ton besoin */
+    height: 100px; 
 }
 
 .logo-container {
     position: absolute;
-    right: 30px; /* Ajuste pour bien placer le logo */
-    top: 50%; /* Centre verticalement */
-    transform: translateY(-50%); /* Correction du centrage */
+    right: 30px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
-.logo {
-    height: 80px; /* Taille du logo */
+.orange {
+    height: 80px;
+    left: -110px;  
+    position: relative;  
+  }
+  
+.africId{
+position: absolute;
+  top: 10px; 
+  left: -1300px; 
+  width: 150px;
+  height: auto;
+
 }
